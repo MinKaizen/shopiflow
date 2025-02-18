@@ -1,5 +1,6 @@
 {
   "editor.formatOnSave": false,
+  "editor.indentSize": 2,
   "[javascript]": {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
