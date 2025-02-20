@@ -1,0 +1,64 @@
+[environments.dev]
+store = "MY_SITE.myshopify.com"
+open = true
+ignore = [
+    ".git/",
+    ".github/",
+    ".gitignore",
+    ".husky/",
+    ".prettierrc.json",
+    ".vscode/",
+    "commitlint.config.js",
+    "node_modules/",
+    "package.json",
+    "pnpm-lock.yaml",
+    "postcss.config.js",
+    "shopify.theme.toml",
+    "src/**",
+]
+
+[environments.pull]
+store = "MY_SITE.myshopify.com"
+theme = "THEME_ID"
+nodelete = true
+ignore = [
+    ".git/",
+    ".github/",
+    ".gitignore",
+    ".husky/",
+    ".prettierrc.json",
+    ".vscode/",
+    "assets/app.css",
+    "assets/app.js",
+    "commitlint.config.js",
+    "node_modules/",
+    "package.json",
+    "pnpm-lock.yaml",
+    "postcss.config.js",
+    "shopify.theme.toml",
+    "src/**",
+]
+
+[environments.push]
+store = "MY_SITE.myshopify.com"
+theme = "THEME_ID"
+ignore = [
+    ".git/",
+    ".github/",
+    ".gitignore",
+    ".husky/",
+    ".prettierrc.json",
+    ".vscode/",
+    "assets/ico-select.svg",
+    "assets/password.scss",
+    "assets/theme.scss",
+    "assets/vendors.css",
+    "backup/",
+    "commitlint.config.js",
+    "node_modules/",
+    "package.json",
+    "pnpm-lock.yaml",
+    "postcss.config.js",
+    "shopify.theme.toml",
+    "src/**",
+]
