@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"No tests to run. Skipping...\"",
+    "dev": "shopify theme dev -e dev",
     "prepare": "husky"
   },
   "keywords": [],
