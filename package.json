@@ -13,6 +13,8 @@
   "devDependencies": {
     "@commitlint/cli": "^19.7.1",
     "@commitlint/config-conventional": "^19.7.1",
-    "husky": "^9.1.7"
+    "@shopify/prettier-plugin-liquid": "^1.8.1",
+    "husky": "^9.1.7",
+    "prettier-plugin-tailwindcss": "^0.6.11"
   }
 }
