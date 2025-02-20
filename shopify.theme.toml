@@ -19,7 +19,7 @@ ignore = [
 
 [environments.pull]
 store = "mkz-shopiflow.myshopify.com"
-theme = "THEME_ID"
+theme = "135571701947"
 nodelete = true
 ignore = [
     ".git/",
@@ -41,7 +41,7 @@ ignore = [
 
 [environments.push]
 store = "mkz-shopiflow.myshopify.com"
-theme = "THEME_ID"
+theme = "135571701947"
 ignore = [
     ".git/",
     ".github/",
