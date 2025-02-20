@@ -1,5 +1,5 @@
 [environments.dev]
-store = "MY_SITE.myshopify.com"
+store = "mkz-shopiflow.myshopify.com"
 open = true
 ignore = [
     ".git/",
@@ -18,7 +18,7 @@ ignore = [
 ]
 
 [environments.pull]
-store = "MY_SITE.myshopify.com"
+store = "mkz-shopiflow.myshopify.com"
 theme = "THEME_ID"
 nodelete = true
 ignore = [
@@ -40,7 +40,7 @@ ignore = [
 ]
 
 [environments.push]
-store = "MY_SITE.myshopify.com"
+store = "mkz-shopiflow.myshopify.com"
 theme = "THEME_ID"
 ignore = [
     ".git/",
