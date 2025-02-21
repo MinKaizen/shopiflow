@@ -29,8 +29,6 @@ const remToPixelPlugin = (options = {}) => {
       const root = result.root;
       const file = root.source.input.file;
 
-      console.log('REM TO PIX..')
-      
       // Skip ignored or non-included files
       if (ignoreFiles.length && file && isFileInArray(file, ignoreFiles)) {
         return;
@@ -38,8 +36,6 @@ const remToPixelPlugin = (options = {}) => {
         return;
       }
 
-      console.log('rem Processing file:', file);
-      
       return {
         Declaration(decl) {
           if (decl.value.indexOf('rem') === -1) return;
