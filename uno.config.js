@@ -9,37 +9,9 @@ export default defineConfig({
       baseFontSize: 16,
     }),
   ],
-  // include: [
-  //   'sections/**/*.liquid',
-  //   'sections/*.liquid',
-  //   './sections/**/*.liquid',
-  //   './sections/*.liquid',
-  //   'snippets/**/*.liquid',
-  //   'snippets/*.liquid',
-  //   './snippets/**/*.liquid',
-  //   './snippets/*.liquid',
-  //   '**/*.liquid',
-  //   '**.liquid',
-  //   '*.liquid',
-  // ],
   content: {
     filesystem: [
       '**/*.liquid',
     ],
-    // pipeline: {
-    //   include: [
-    //     'sections/**/*.liquid',
-    //     'sections/*.liquid',
-    //     './sections/**/*.liquid',
-    //     './sections/*.liquid',
-    //     'snippets/**/*.liquid',
-    //     'snippets/*.liquid',
-    //     './snippets/**/*.liquid',
-    //     './snippets/*.liquid',
-    //     '**/*.liquid',
-    //     '**.liquid',
-    //     '*.liquid',
-    //   ],
-    // },
   },
 })
