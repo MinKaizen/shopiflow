@@ -7,7 +7,8 @@
     "test": "echo \"No tests to run. Skipping...\"",
     "dev": "shopify theme dev -e dev",
     "pull": "shopify theme pull -e pull",
-    "build": "echo 'Not implemented yet'",
+    "build": "pnpm postcss src/css/theme-no-conflict.css -o assets/theme-no-conflict.css --verbose && pnpm postcss src/css/app.css -o assets/app.css --verbose",
+    "watch": "pnpm postcss src/css/theme-no-conflict.css -o assets/theme-no-conflict.css --verbose && pnpm postcss src/css/app.css -o assets/app.css --verbose --watch",
     "deploy:production": "pnpm run build && shopify theme push -e push",
     "prepare": "husky"
   },
@@ -18,7 +19,17 @@
     "@commitlint/cli": "^19.7.1",
     "@commitlint/config-conventional": "^19.7.1",
     "@shopify/prettier-plugin-liquid": "^1.8.1",
+    "@unocss/postcss": "^66.0.0",
+    "@unocss/preset-wind": "^66.0.0",
+    "autoprefixer": "^10.4.20",
     "husky": "^9.1.7",
-    "prettier-plugin-tailwindcss": "^0.6.11"
+    "postcss-cli": "^11.0.0",
+    "postcss-import": "^16.1.0",
+    "postcss-nested": "^7.0.2",
+    "postcss-prefix-selector": "^2.1.0",
+    "postcss-scss": "^4.0.9",
+    "postcss-selector-parser": "^7.1.0",
+    "prettier-plugin-tailwindcss": "^0.6.11",
+    "unocss": "^66.0.0"
   }
 }

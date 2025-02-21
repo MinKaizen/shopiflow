@@ -11,3 +11,8 @@ Thumbs.db
 
 # Dev files and folders
 node_modules/
+
+# Compiled files
+assets/app.css
+assets/theme-no-conflict.css
+assets/app.js

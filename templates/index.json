@@ -1,4 +1,5 @@
 {
+  "layout": "app",
   "sections": {
     "image_banner": {
       "type": "image-banner",
@@ -200,6 +201,7 @@
     }
   },
   "order": [
+    "temp",
     "image_banner",
     "rich_text",
     "featured_collection",
