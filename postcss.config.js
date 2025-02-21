@@ -14,13 +14,6 @@ module.exports = {
         twSelector: '.tw',
         excludeFiles: ['app.css'],
       }),
-      require('./postcss-rem-to-pixel')({
-        rootValue: 10,
-        ignoreFiles: ['app.css'],
-        propList: ['*'],
-        mediaQuery: false,
-        unitPrecision: 2,
-      }),
       require('autoprefixer')(),
       require('postcss-nested')(),
     ]

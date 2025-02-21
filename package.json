@@ -20,6 +20,7 @@
     "@commitlint/config-conventional": "^19.7.1",
     "@shopify/prettier-plugin-liquid": "^1.8.1",
     "@unocss/postcss": "^66.0.0",
+    "@unocss/preset-rem-to-px": "^66.0.0",
     "@unocss/preset-wind": "^66.0.0",
     "autoprefixer": "^10.4.20",
     "husky": "^9.1.7",

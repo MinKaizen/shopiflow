@@ -20,6 +20,9 @@ importers:
       '@unocss/postcss':
         specifier: ^66.0.0
         version: 66.0.0(postcss@8.5.3)
+      '@unocss/preset-rem-to-px':
+        specifier: ^66.0.0
+        version: 66.0.0
       '@unocss/preset-wind':
         specifier: ^66.0.0
         version: 66.0.0
@@ -501,6 +504,9 @@ packages:
 
   '@unocss/preset-mini@66.0.0':
     resolution: {integrity: sha512-d62eACnuKtR0dwCFOQXgvw5VLh5YSyK56xCzpHkh0j0GstgfDLfKTys0T/XVAAvdSvAy/8A8vhSNJ4PlIc9V2A==}
+
+  '@unocss/preset-rem-to-px@66.0.0':
+    resolution: {integrity: sha512-rfeH89rtdgVakDsdKksq7AW9lUp4Gdz7KNnrQ6wYkCSUmroAF7vwkKqA6SZbhklLMRNY2ps/O1j75B6FFR8lrA==}
 
   '@unocss/preset-tagify@66.0.0':
     resolution: {integrity: sha512-GGYGyWxaevh0jN0NoATVO1Qe7DFXM3ykLxchlXmG6/zy963pZxItg/njrKnxE9la4seCdxpFH7wQBa68imwwdA==}
@@ -1873,6 +1879,10 @@ snapshots:
       '@unocss/core': 66.0.0
       '@unocss/extractor-arbitrary-variants': 66.0.0
       '@unocss/rule-utils': 66.0.0
+
+  '@unocss/preset-rem-to-px@66.0.0':
+    dependencies:
+      '@unocss/core': 66.0.0
 
   '@unocss/preset-tagify@66.0.0':
     dependencies:
