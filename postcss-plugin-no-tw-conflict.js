@@ -123,7 +123,7 @@ module.exports = (opts = {}) => {
                                 });
     
                                 if (lastNode) {
-                                    parent.insertAfter(node, selectorParser.pseudo({ value: `:not(${twSelector} ${node.toString()})` }));
+                                    parent.insertAfter(node, selectorParser.pseudo({ value: `:not(${twSelector}):not(${twSelector} ${node.toString()})` }));
                                 }
                             }
                         }
