@@ -133,23 +133,34 @@ module.exports = (opts = {}) => {
 
       root.walkRules((rule) => {
         rule.selectors = rule.selectors.map((selector) => {
-          try {
-            return selectorParser((selectors) => {
-              selectors.walkClasses((node) => {
-                if (twClassSet.has(node.value)) {
-                  const parent = node.parent;
-                  if (parent) {
-                    parent.insertAfter(node, selectorParser.pseudo({ value: `:not(${twSelector})` }));
-                  }
-                }
-              });
-            }).processSync(selector);
-          } catch (error) {
-            console.error('Error processing selector:', selector, error);
-            return selector;
-          }
+            try {
+                return selectorParser((selectors) => {
+                    selectors.walkClasses((node) => {
+                        if (twClassSet.has(node.value)) {
+                            const parent = node.parent;
+                            if (parent) {
+                                // Find the last simple selector (i.e., the last class, tag, or ID in the selector)
+                                let lastNode = null;
+                                parent.each((child) => {
+                                    if (child.type === 'class' || child.type === 'tag' || child.type === 'id') {
+                                        lastNode = child;
+                                    }
+                                });
+    
+                                if (lastNode) {
+                                    const lastSelector = lastNode.toString();
+                                    parent.insertAfter(node, selectorParser.pseudo({ value: `:not(${twSelector} ${lastSelector})` }));
+                                }
+                            }
+                        }
+                    });
+                }).processSync(selector);
+            } catch (error) {
+                console.error('Error processing selector:', selector, error);
+                return selector;
+            }
         });
-      });
+    });
     }
   };
 };

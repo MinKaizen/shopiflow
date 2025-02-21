@@ -5,8 +5,9 @@ module.exports = {
     plugins: [
       require('postcss-import')(),
       require('@unocss/postcss')(),
-      require('./postcss-plugin-prefix-selector')({
+      require('postcss-prefix-selector')({
         prefix: '.tw',
+        skipGlobalSelectors: true,
         includeFiles: ['app.css'],
       }),
       require('./postcss-plugin-no-tw-conflict')({
