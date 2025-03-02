@@ -12,11 +12,12 @@ ignore = [
   "node_modules/",
   "package.json",
   "pnpm-lock.yaml",
-  "postcss-plugin-no-tw-conflict.js",
-  "postcss-plugin-prefix-selector.js",
-  "postcss.config.js",
+  "postcss-plugin-no-tw-conflict.mjs",
+  "postcss-plugin-prefix-selector.mjs",
+  "postcss.config.mjs",
   "shopify.theme.toml",
   "src/**",
+  "vite.config.js",
 ]
 
 [environments.pull]
@@ -31,17 +32,18 @@ ignore = [
   ".prettierrc.json",
   ".vscode/",
   "assets/app.css",
-  "assets/theme-no-conflict.css",
   "assets/app.js",
+  "assets/theme-no-conflict.css",
   "commitlint.config.js",
   "node_modules/",
   "package.json",
   "pnpm-lock.yaml",
-  "postcss-plugin-no-tw-conflict.js",
-  "postcss-plugin-prefix-selector.js",
-  "postcss.config.js",
+  "postcss-plugin-no-tw-conflict.mjs",
+  "postcss-plugin-prefix-selector.mjs",
+  "postcss.config.mjs",
   "shopify.theme.toml",
   "src/**",
+  "vite.config.js",
 ]
 
 [environments.push]
@@ -58,9 +60,10 @@ ignore = [
   "node_modules/",
   "package.json",
   "pnpm-lock.yaml",
-  "postcss-plugin-no-tw-conflict.js",
-  "postcss-plugin-prefix-selector.js",
-  "postcss.config.js",
+  "postcss-plugin-no-tw-conflict.mjs",
+  "postcss-plugin-prefix-selector.mjs",
+  "postcss.config.mjs",
   "shopify.theme.toml",
   "src/**",
+  "vite.config.js",
 ]

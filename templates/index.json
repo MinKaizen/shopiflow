@@ -10,6 +10,9 @@
 {
   "layout": "app",
   "sections": {
+    "temp": {
+      "type": "temp"
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -210,6 +213,7 @@
     }
   },
   "order": [
+    "temp",
     "image_banner",
     "rich_text",
     "featured_collection",
