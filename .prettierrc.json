@@ -3,6 +3,7 @@
     "@shopify/prettier-plugin-liquid",
     "prettier-plugin-tailwindcss"
   ],
+  "tailwindStylesheet": "./src/css/tailwind.css",
   "printWidth": 9999,
   "singleQuote": true,
   "overrides": [
